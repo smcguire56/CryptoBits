@@ -190,3 +190,5 @@ C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\obj\x86\Debug\qualif
 C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\System.Net.Http.Extensions.dll
+C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\System.Net.Http.Primitives.dll

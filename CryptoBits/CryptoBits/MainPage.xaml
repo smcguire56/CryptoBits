@@ -17,6 +17,7 @@
                 <StackPanel Background="DarkGray">
                     <TextBlock Text="Display All Cryptos including alt coins"/>
                     <Button Content="Get Coins" Click="button_Click" />
+                    <TextBlock x:Name="textBlock" TextWrapping="Wrap" />
                 </StackPanel>
 
 
