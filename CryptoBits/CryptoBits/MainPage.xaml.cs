@@ -29,9 +29,9 @@ namespace CryptoBits
 
         private async void button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myCoin = await CoinProxy.getCoin("bitcoin");
+            RootObject myCoin = await CoinProxy.getCoin(200, 300);
 
-            textBlock.Text = "Coin: " +myCoin.name + " " + myCoin.price_btc;
+            textBlock.Text = "Coin: " +myCoin.name + " " + myCoin.weather[0].description;
         }
     }
 }

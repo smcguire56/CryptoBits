@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-27T15:35:56.400</Modified>
+      <Modified>2018-03-06T14:01:12.821</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\CryptoBits.exe">
       <PackagePath>entrypoint\CryptoBits.exe</PackagePath>
-      <Modified>2018-02-27T15:35:54.456</Modified>
+      <Modified>2018-03-06T14:01:10.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -504,11 +504,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2018-02-27T15:15:50.217</Modified>
+      <Modified>2018-03-06T13:59:29.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\Core\CryptoBits.exe">
       <PackagePath>CryptoBits.exe</PackagePath>
-      <Modified>2018-02-27T15:35:56.397</Modified>
+      <Modified>2018-03-06T14:01:12.815</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
