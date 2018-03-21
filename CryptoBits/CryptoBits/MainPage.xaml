@@ -7,19 +7,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Pivot x:Name="rootPivot" Title="CryptoBits">
             <PivotItem Header="Coins">
                 <!--Pivot content goes here-->
-
-                <StackPanel Background="DarkGray">
-                    <TextBlock Text="Display All Cryptos including alt coins"/>
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Background="DarkGray">
+                    <TextBlock Text="Display All New Cryptos"/>
+                    <TextBox x:Name="textBox" TextWrapping="Wrap" Text="10" TextChanged="textBox_TextChanged"/>
                     <Button Content="Get Coins" Click="button_Click" />
                     <TextBlock x:Name="textBlock" TextWrapping="Wrap" />
+                    <Button Content="Clear Coins" Click="button_Click2" />
                 </StackPanel>
-
+                </ScrollViewer>
 
             </PivotItem>
             <PivotItem Header="Alerts">
@@ -31,8 +33,8 @@
                 <TextBlock Text="Change user settings including: Currency, Coins to display, Sorting, Theme."/>
             </PivotItem>
         </Pivot>
-        
-        
+
+
 
     </Grid>
 </Page>

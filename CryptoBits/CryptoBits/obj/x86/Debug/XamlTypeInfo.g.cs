@@ -132,15 +132,17 @@ namespace CryptoBits.CryptoBits_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[4];
             _typeNameTable[0] = "CryptoBits.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "Object";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[4];
             _typeTable[0] = typeof(global::CryptoBits.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::System.Object);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -190,6 +192,7 @@ namespace CryptoBits.CryptoBits_XamlTypeInfo
             case 0:   //  CryptoBits.MainPage
                 userType = new global::CryptoBits.CryptoBits_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_MainPage;
+                userType.AddMemberName("JsonConvert");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -201,16 +204,35 @@ namespace CryptoBits.CryptoBits_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::CryptoBits.CryptoBits_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  Object
+                xamlType = new global::CryptoBits.CryptoBits_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_MainPage_JsonConvert(object instance)
+        {
+            var that = (global::CryptoBits.MainPage)instance;
+            return that.JsonConvert;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::CryptoBits.CryptoBits_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::CryptoBits.CryptoBits_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "CryptoBits.MainPage.JsonConvert":
+                userType = (global::CryptoBits.CryptoBits_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CryptoBits.MainPage");
+                xamlMember = new global::CryptoBits.CryptoBits_XamlTypeInfo.XamlMember(this, "JsonConvert", "Object");
+                xamlMember.Getter = get_0_MainPage_JsonConvert;
+                xamlMember.SetIsReadOnly();
+                break;
+            }
             return xamlMember;
         }
     }

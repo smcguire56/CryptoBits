@@ -22,16 +22,45 @@ namespace CryptoBits
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public int count = 0;
+        public int max = 10;
         public MainPage()
         {
             this.InitializeComponent();
         }
 
+        public object JsonConvert { get; private set; }
+
         private async void button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myCoin = await CoinProxy.getCoin(200, 300);
+            RootObject myCoin = await CoinProxy.getCoin();
 
-            textBlock.Text = "Coin: " +myCoin.name + " " + myCoin.weather[0].description;
+            textBlock.Text = "Displaying coins";
+            while (count <= max)
+            {
+                textBlock.Text += "\nCoin: " + count + " name: " + myCoin.ico.live[count].name + " Coin: " + myCoin.ico.live[count].description;
+                count++;
+            }
+
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox.Text, "[^0-9]"))
+            {
+                textBlock.Text = "Please enter only numbers.";
+                textBox.Text = textBox.Text.Remove(textBox.Text.Length - 1);
+            }
+            else {
+                max = Int32.Parse(textBox.Text);
+            }
+        }
+
+        private void button_Click2(object sender, RoutedEventArgs e)
+        {
+            textBlock.Text = "test";
+            max = 10;
+            count = 0;
         }
     }
 }
