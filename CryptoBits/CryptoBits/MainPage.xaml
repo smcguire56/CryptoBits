@@ -20,7 +20,28 @@
                     <Button Content="Get Coins" Click="button_Click" />
                     <TextBlock x:Name="textBlock" TextWrapping="Wrap" />
                     <Button Content="Clear Coins" Click="button_Click2" />
-                </StackPanel>
+
+
+                        <ListView Height="100"
+          ScrollViewer.HorizontalScrollMode="Enabled" 
+          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+          ScrollViewer.VerticalScrollMode="Disabled"
+          ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <ItemsWrapGrid/>
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                            <x:String>Item 1</x:String>
+                            <x:String>Item 2</x:String>
+                            <x:String>Item 3</x:String>
+                            <x:String>Item 4</x:String>
+                            <x:String>Item 5</x:String>
+                        </ListView>
+                        
+                        
+                        
+                    </StackPanel>
                 </ScrollViewer>
 
             </PivotItem>

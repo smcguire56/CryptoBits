@@ -13,13 +13,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace CryptoBits
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         public int count = 0;
@@ -36,12 +32,12 @@ namespace CryptoBits
             RootObject myCoin = await CoinProxy.getCoin();
 
             textBlock.Text = "Displaying coins";
-            while (count <= max)
+            while (count <= (max - 1))
             {
-                textBlock.Text += "\nCoin: " + count + " name: " + myCoin.ico.live[count].name + " Coin: " + myCoin.ico.live[count].description;
+                textBlock.Text += "\nCoin: " + (count + 1) + " name: " + myCoin.ico.finished[count].name + " Description: " + myCoin.ico.finished[count].description + " Price: " + myCoin.ico.finished[count].price_usd;
                 count++;
             }
-
+            count = 0;
         }
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
