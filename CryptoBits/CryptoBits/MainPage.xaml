@@ -14,48 +14,27 @@
             <PivotItem Header="Coins">
                 <!--Pivot content goes here-->
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <StackPanel Background="DarkGray">
-                    <TextBlock Text="Display All New Cryptos"/>
-                    <TextBox x:Name="textBox" TextWrapping="Wrap" Text="10" TextChanged="textBox_TextChanged"/>
-                    <Button Content="Get Coins" Click="button_Click" />
-                    <TextBlock x:Name="textBlock" TextWrapping="Wrap" />
-                    <Button Content="Clear Coins" Click="button_Click2" />
-
-
-                        <ListView Height="100"
-          ScrollViewer.HorizontalScrollMode="Enabled" 
-          ScrollViewer.HorizontalScrollBarVisibility="Auto"
-          ScrollViewer.VerticalScrollMode="Disabled"
-          ScrollViewer.VerticalScrollBarVisibility="Hidden">
-                            <ListView.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <ItemsWrapGrid/>
-                                </ItemsPanelTemplate>
-                            </ListView.ItemsPanel>
-                            <x:String>Item 1</x:String>
-                            <x:String>Item 2</x:String>
-                            <x:String>Item 3</x:String>
-                            <x:String>Item 4</x:String>
-                            <x:String>Item 5</x:String>
-                        </ListView>
-                        
-                        
-                        
+                    <StackPanel>
+                        <TextBlock Text="Display All New Cryptos"/>
+                        <TextBox x:Name="textBox" TextWrapping="Wrap" Text="10" TextChanged="textBox_TextChanged"/>
+                        <Button Content="Get Coins" Click="button_Click" />
+                        <Button Content="Clear Coins" Click="button_Click2" />
+                        <TextBlock x:Name="textBlock" TextWrapping="Wrap" />
                     </StackPanel>
                 </ScrollViewer>
-
             </PivotItem>
+            
             <PivotItem Header="Alerts">
                 <!--Pivot content goes here-->
-                <TextBlock Text="Give user alerts for when a certain coin goes to a certain price."/>
+                <Button x:Name="button3" Click="button_Click3" Content="Test notification." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
             </PivotItem>
-            <PivotItem Header="Settings">
+
+
+            <PivotItem Header="Settings" Margin="10,0,14,-0.2">
                 <!--Pivot content goes here-->
-                <TextBlock Text="Change user settings including: Currency, Coins to display, Sorting, Theme."/>
+                <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="209,82,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+                
             </PivotItem>
         </Pivot>
-
-
-
     </Grid>
 </Page>

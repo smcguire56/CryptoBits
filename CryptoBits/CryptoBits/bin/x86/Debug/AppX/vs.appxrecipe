@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>CR1005</Machine>
+    <Machine>CR518</Machine>
     <WindowsUser>g00330886</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-21T18:42:27.892</Modified>
+      <Modified>2018-03-26T16:34:40.385</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\CryptoBits.exe">
       <PackagePath>entrypoint\CryptoBits.exe</PackagePath>
-      <Modified>2018-03-21T18:42:27.539</Modified>
+      <Modified>2018-03-26T16:34:38.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -502,45 +502,45 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2018-03-21T16:04:21.548</Modified>
+      <Modified>2018-03-26T14:01:45.031</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2018-03-21T16:04:21.548</Modified>
+      <Modified>2018-03-26T14:01:44.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-21T16:04:21.548</Modified>
+      <Modified>2018-03-26T14:01:44.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-21T16:04:21.548</Modified>
+      <Modified>2018-03-26T14:01:44.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-21T16:04:21.548</Modified>
+      <Modified>2018-03-26T14:01:44.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-21T16:04:21.548</Modified>
+      <Modified>2018-03-26T14:01:44.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-21T16:04:21.548</Modified>
+      <Modified>2018-03-26T14:01:44.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-21T16:04:21.548</Modified>
+      <Modified>2018-03-26T14:01:44.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\CryptoBits.xr.xml">
       <PackagePath>CryptoBits.xr.xml</PackagePath>
-      <Modified>2018-03-21T17:44:46.734</Modified>
+      <Modified>2018-03-26T16:34:38.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -548,11 +548,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2018-03-21T17:44:47.144</Modified>
+      <Modified>2018-03-26T16:34:39.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\bin\x86\Debug\Core\CryptoBits.exe">
       <PackagePath>CryptoBits.exe</PackagePath>
-      <Modified>2018-03-21T18:42:27.887</Modified>
+      <Modified>2018-03-26T16:34:40.379</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
