@@ -14,26 +14,31 @@
             <PivotItem Header="Coins">
                 <!--Pivot content goes here-->
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <StackPanel>
+                    <StackPanel x:Name="stackPanel1">
                         <TextBlock Text="Display All New Cryptos"/>
-                        <TextBox x:Name="textBox" TextWrapping="Wrap" Text="10" TextChanged="textBox_TextChanged"/>
+                        <TextBox x:Name="textBox" TextWrapping="Wrap" Text="10" TextChanged="textBox_TextChanged" Width="200"/>
                         <Button Content="Get Coins" Click="button_Click" />
                         <Button Content="Clear Coins" Click="button_Click2" />
+
                         <TextBlock x:Name="textBlock" TextWrapping="Wrap" />
+
+                        <ListView x:Name="listView1">
+                        </ListView>
+                        <Button Content="Detailed Page" Click="listView1_ItemClick" />
                     </StackPanel>
                 </ScrollViewer>
             </PivotItem>
-            
+
             <PivotItem Header="Alerts">
                 <!--Pivot content goes here-->
                 <Button x:Name="button3" Click="button_Click3" Content="Test notification." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
             </PivotItem>
 
 
-            <PivotItem Header="Settings" Margin="10,0,14,-0.2">
+            <PivotItem Header="Settings">
                 <!--Pivot content goes here-->
                 <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="209,82,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-                
+
             </PivotItem>
         </Pivot>
     </Grid>

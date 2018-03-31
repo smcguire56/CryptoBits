@@ -1,1 +1,1 @@
-C:\Users\g00330886\Desktop\CryptoBits\CryptoBits\CryptoBits\CryptoBits.csproj;x86
+C:\Users\John\Desktop\CryptoBits\CryptoBits\CryptoBits\CryptoBits.csproj;x86
