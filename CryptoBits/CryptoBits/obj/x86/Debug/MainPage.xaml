@@ -14,31 +14,35 @@
             <PivotItem Header="Coins">
                 <!--Pivot content goes here-->
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <StackPanel x:ConnectionId='4' x:Name="stackPanel1">
+                    <StackPanel x:ConnectionId='7' x:Name="stackPanel1">
                         <TextBlock Text="Display All New Cryptos"/>
-                        <TextBox x:ConnectionId='5' x:Name="textBox" TextWrapping="Wrap" Text="10"                                   Width="200"/>
-                        <Button x:ConnectionId='6' Content="Get Coins"                      />
-                        <Button x:ConnectionId='7' Content="Clear Coins"                       />
+                        <TextBox x:ConnectionId='8' x:Name="textBox" TextWrapping="Wrap" Text="10"                                   Width="200"/>
+                        <Button x:ConnectionId='9' Content="Get Coins"                      />
+                        <Button x:ConnectionId='10' Content="Clear Coins"                       />
 
-                        <TextBlock x:ConnectionId='8' x:Name="textBlock" TextWrapping="Wrap" />
+                        <TextBlock x:ConnectionId='11' x:Name="textBlock" TextWrapping="Wrap" />
 
-                        <ListView x:ConnectionId='9' x:Name="listView1">
+                        <ListView x:ConnectionId='12' x:Name="listView1">
                         </ListView>
-                        <Button x:ConnectionId='10' Content="Detailed Page"                             />
+                        <Button x:ConnectionId='13' Content="Detailed Page"                             />
                     </StackPanel>
                 </ScrollViewer>
             </PivotItem>
 
             <PivotItem Header="Alerts">
                 <!--Pivot content goes here-->
-                <Button x:ConnectionId='3' x:Name="button3"                       Content="Test notification." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Button x:ConnectionId='6' x:Name="button3"                       Content="Click me to recieve notifications about different ICO's" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
             </PivotItem>
 
 
-            <PivotItem Header="Settings">
+            <PivotItem Header="Feedback">
                 <!--Pivot content goes here-->
-                <TextBox x:ConnectionId='2' x:Name="textBox1" HorizontalAlignment="Left" Margin="209,82,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+                <StackPanel x:ConnectionId='2' x:Name="stackPanel" >
+                    <TextBox x:ConnectionId='3' x:Name="textBox1" HorizontalAlignment="Left" Margin="30,30,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="175" Width="335"/>
+                    <Button x:ConnectionId='4' Content="Send"              Margin="30,30,0,10" Height="45" Width="73"/>
+                    <TextBlock x:ConnectionId='5' x:Name="name"/>
 
+                </StackPanel>
             </PivotItem>
         </Pivot>
     </Grid>

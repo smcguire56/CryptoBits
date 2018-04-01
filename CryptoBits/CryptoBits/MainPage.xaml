@@ -31,14 +31,18 @@
 
             <PivotItem Header="Alerts">
                 <!--Pivot content goes here-->
-                <Button x:Name="button3" Click="button_Click3" Content="Test notification." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="button3" Click="button_Click3" Content="Click me to recieve notifications about different ICO's" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
             </PivotItem>
 
 
-            <PivotItem Header="Settings">
+            <PivotItem Header="Feedback">
                 <!--Pivot content goes here-->
-                <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="209,82,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+                <StackPanel x:Name="stackPanel" >
+                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="30,30,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="175" Width="335"/>
+                    <Button Content="Send" Click="send" Margin="30,30,0,10" Height="45" Width="73"/>
+                    <TextBlock x:Name="name"/>
 
+                </StackPanel>
             </PivotItem>
         </Pivot>
     </Grid>

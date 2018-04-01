@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Linq;
+using System.Threading.Tasks;
+using Windows.ApplicationModel.Contacts;
 using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -11,6 +14,8 @@ namespace CryptoBits
     {
         public int count = 0;
         public int max = 10;
+        public int notificationCounter = 0;
+
         ObservableCollection<string> listItems = new ObservableCollection<string>();
 
         public MainPage()
@@ -64,9 +69,13 @@ namespace CryptoBits
             count = 0;
         }
 
-        private void button_Click3(object sender, RoutedEventArgs e)
+        private async void button_Click3(object sender, RoutedEventArgs e)
         {
-            ShowToastNotification("title", "content");
+
+            RootObject myCoin = await CoinProxy.getCoin();
+
+            ShowToastNotification(myCoin.ico.upcoming[notificationCounter].name, myCoin.ico.upcoming[notificationCounter].description);
+            notificationCounter++;
         }
 
         private void ShowToastNotification(string title, string stringContent)
@@ -90,5 +99,41 @@ namespace CryptoBits
             this.Frame.Navigate(typeof(Details_age));
 
         }
+
+        private async void send(object sender, RoutedEventArgs e)
+        {
+            var contactPicker = new Windows.ApplicationModel.Contacts.ContactPicker();
+
+            contactPicker.DesiredFieldsWithContactFieldType.Add(Windows.ApplicationModel.Contacts.ContactFieldType.Email);
+
+            Contact contact = await contactPicker.PickContactAsync();
+
+            if (contact != null)
+            {
+                name.Text = contact.DisplayName;
+            }
+            else
+            {
+                name.Text = "Sent";
+
+            }
+        }
+
+        private async Task ComposeEmail(Windows.ApplicationModel.Contacts.Contact recipient, string subject, string messageBody)
+        {
+            var emailMessage = new Windows.ApplicationModel.Email.EmailMessage();
+            emailMessage.Body = messageBody;
+
+            var email = recipient.Emails.FirstOrDefault<Windows.ApplicationModel.Contacts.ContactEmail>();
+            if (email != null)
+            {
+                var emailRecipient = new Windows.ApplicationModel.Email.EmailRecipient(email.Address);
+                emailMessage.To.Add(emailRecipient);
+                emailMessage.Subject = subject;
+            }
+
+            await Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(emailMessage);
+        }
+
     }
 }

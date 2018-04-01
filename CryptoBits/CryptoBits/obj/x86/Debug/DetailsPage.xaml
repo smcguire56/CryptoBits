@@ -8,9 +8,17 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:ConnectionId='1' x:Name="BackButton"                    Style="{StaticResource NavigationBackButtonNormalStyle}" Margin="10,10,0,718"/>
-        <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="32,173,0,0" TextWrapping="Wrap" Text="Search Coins" VerticalAlignment="Top" Height="22" Width="313"                                              />
-        <Button x:ConnectionId='3' x:Name="Search" Content="Search" HorizontalAlignment="Left" Margin="156,248,0,0" VerticalAlignment="Top"                     />
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel x:ConnectionId='1' x:Name="stackPanel1">
+                <Button x:ConnectionId='2' Style="{StaticResource NavigationBackButtonNormalStyle}"                   />
+
+                <Button x:ConnectionId='3' Content="Get Coins"                      />
+
+                <ListView x:ConnectionId='4' x:Name="listView1">
+                </ListView>
+                
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
 

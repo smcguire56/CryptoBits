@@ -7,6 +7,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
+using CryptoBitsCompare;
 
 namespace CryptoBits
 {
@@ -76,5 +77,10 @@ namespace CryptoBits
     public class RootObject
     {
         public Ico ico { get; set; }
+
+        public static implicit operator RootObject(CryptoBitsCompare.RootObject v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

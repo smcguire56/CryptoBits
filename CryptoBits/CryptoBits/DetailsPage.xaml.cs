@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -32,14 +33,30 @@ namespace CryptoBits
             this.Frame.Navigate(typeof(MainPage));
         }
 
-        private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        private async void button_Click(object sender, RoutedEventArgs e)
         {
+            int count = 0;
+            int max = 200;
+            ObservableCollection<string> listItems = new ObservableCollection<string>();
 
+
+            RootObject myCoin = await CoinProxy.getCoin();
+
+            while (count <= (max - 1))
+            {
+
+                listItems.Add("\nCoin: " + (count + 1) + "\n name: " + myCoin.ico.finished[count].name + "\n Description: " + myCoin.ico.finished[count].description + "\n Price: " + myCoin.ico.finished[count].price_usd
+                    + "\n URL: " + myCoin.ico.finished[count].icowatchlist_url + "\n Start time: " + myCoin.ico.finished[count].start_time + "\n Website: " + myCoin.ico.finished[count].website_link);
+
+                count++;
+            }
+            // Create a new list view, add content, 
+            ListView itemListView = new ListView();
+            itemListView.ItemsSource = listItems;
+            stackPanel1.Children.Add(itemListView);
+
+            count = 0;
         }
 
-        private void Search_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
