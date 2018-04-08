@@ -13,7 +13,7 @@ namespace CryptoBits
     public sealed partial class MainPage : Page
     {
         public int count = 0;
-        public int max = 10;
+        public int max = 100;
         public int notificationCounter = 0;
 
         ObservableCollection<string> listItems = new ObservableCollection<string>();
@@ -30,13 +30,13 @@ namespace CryptoBits
 
             RootObject myCoin = await CoinProxy.getCoin();
 
-            textBlock.Text = "Displaying coins";
+            textBlock.Text = "Displaying coins...";
             while (count <= (max - 1))
             {
 
                 //textBlock.Text += "\nCoin: " + (count + 1) + " name: " + myCoin.ico.finished[count].name + " Description: " + myCoin.ico.finished[count].description + " Price: " + myCoin.ico.finished[count].price_usd;
                 // Create a new ListView and add content. 
-                listItems.Add("\nCoin: " + (count + 1) + " name: " + myCoin.ico.finished[count].name + " Description: " + myCoin.ico.finished[count].description + " Price: " + myCoin.ico.finished[count].price_usd);
+                listItems.Add("\nCoin: " + (count + 1) + "\nname: " + myCoin.ico.finished[count].name + "\nPrice: " + myCoin.ico.finished[count].price_usd + "\nDescription: " + myCoin.ico.finished[count].description );
 
                 count++;
             }

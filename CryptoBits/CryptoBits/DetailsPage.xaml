@@ -12,9 +12,13 @@
             <StackPanel x:Name="stackPanel1">
                 <Button Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Back_Click"/>
 
-                <Button Content="Get Coins" Click="button_Click" />
+                <Button Content="Display finished coins" Click="button_Click" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                <Button Content="Display live coins" Click="button_Click2" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                <Button Content="Display upcoming coins" Click="button_Click3" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                
+                <Button Content="Clear list" Click="Button_Click_1" HorizontalAlignment="Center" Margin="0,0,0,10"/>
 
-                <ListView x:Name="listView1">
+                <ListView x:Name="listView1" HorizontalAlignment="Center">
                 </ListView>
                 
             </StackPanel>

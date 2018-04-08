@@ -12,9 +12,13 @@
             <StackPanel x:ConnectionId='1' x:Name="stackPanel1">
                 <Button x:ConnectionId='2' Style="{StaticResource NavigationBackButtonNormalStyle}"                   />
 
-                <Button x:ConnectionId='3' Content="Get Coins"                      />
+                <Button x:ConnectionId='3' Content="Display finished coins"                      HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                <Button x:ConnectionId='4' Content="Display live coins"                       HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                <Button x:ConnectionId='5' Content="Display upcoming coins"                       HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                
+                <Button x:ConnectionId='6' Content="Clear list"                        HorizontalAlignment="Center" Margin="0,0,0,10"/>
 
-                <ListView x:ConnectionId='4' x:Name="listView1">
+                <ListView x:ConnectionId='7' x:Name="listView1" HorizontalAlignment="Center">
                 </ListView>
                 
             </StackPanel>

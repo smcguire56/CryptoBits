@@ -15,23 +15,21 @@
                 <!--Pivot content goes here-->
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel x:Name="stackPanel1">
-                        <TextBlock Text="Display All New Cryptos"/>
-                        <TextBox x:Name="textBox" TextWrapping="Wrap" Text="10" TextChanged="textBox_TextChanged" Width="200"/>
-                        <Button Content="Get Coins" Click="button_Click" />
-                        <Button Content="Clear Coins" Click="button_Click2" />
-
+                        <TextBlock Text="Display All New Cryptos" FontSize="25" TextAlignment="Center" Padding="10"/>
+                        <TextBox x:Name="textBox" TextWrapping="Wrap" Text="100" TextChanged="textBox_TextChanged" Width="200" Padding="5"/>
+                        <Button Content="Get Coins" Click="button_Click" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                        <Button Content="Clear Coins" Click="button_Click2" HorizontalAlignment="Center" Margin="0,20,0,0"/>
                         <TextBlock x:Name="textBlock" TextWrapping="Wrap" />
-
-                        <ListView x:Name="listView1">
+                        <ListView x:Name="listView1" HorizontalAlignment="Center" Padding="10">
                         </ListView>
-                        <Button Content="Detailed Page" Click="listView1_ItemClick" />
+                        <Button Content="Detailed Page" Click="listView1_ItemClick" HorizontalAlignment="Center" Margin="0,0,0,0" />
                     </StackPanel>
                 </ScrollViewer>
             </PivotItem>
 
             <PivotItem Header="Alerts">
                 <!--Pivot content goes here-->
-                <Button x:Name="button3" Click="button_Click3" Content="Click me to recieve notifications about different ICO's" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="button3" Click="button_Click3" Content="Click me to recieve notifications about different ICO's" HorizontalAlignment="Center" Margin="10,10,10,620"/>
             </PivotItem>
 
 
