@@ -1,5 +1,5 @@
 # CryptoCoins
-# G00330886   Sean McGuire    Mobile Application Development 2
+# G00330886   Sean McGuire    Mobile Application Development 
 
 This is a UWP app built for displaying the latest and most popular Crypto coins on the market!
 
